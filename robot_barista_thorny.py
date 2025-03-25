@@ -55,7 +55,7 @@ while True:
 
         # Inform the customer that their order will be ready soon
         print("\nThank you " + name + ", we'll have your " + str(quantity) + " " + order + "(s) ready for you in a moment. \nTo exit program press:\n Ctrl+C")
-        pass
+        
     except KeyboardInterrupt:
         # Handle manual exit with Ctrl+C
         print("\nExiting program...")
