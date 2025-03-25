@@ -51,10 +51,10 @@ while True:
         total = price * quantity
 
         # Display the total price to the customer
-        print("Thank you! Your total is:\n$" + str(total))
+        print("\nThank you! Your total is:\n$" + str(total))
 
         # Inform the customer that their order will be ready soon
-        print("Thank you " + name + ", we'll have your " + str(quantity) + " " + order + "(s) ready for you in a moment. \nTo exit program press:\n Ctrl+C")
+        print("\nThank you " + name + ", we'll have your " + str(quantity) + " " + order + "(s) ready for you in a moment. \nTo exit program press:\n Ctrl+C")
         pass
     except KeyboardInterrupt:
         # Handle manual exit with Ctrl+C
