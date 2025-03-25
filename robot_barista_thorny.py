@@ -1,10 +1,9 @@
 while True:
     try:
-        name = input("Welcome to the Robot Barista!! May I have your name?\n")
+        name = input("\nWelcome to the Robot Barista!! May I have your name?\n")
  
-#greet the customer with their name and thank them for coming in today
- 
-        if name.lower() == "Ben":
+        # Greet the customer with their name and thank them for coming in today
+        if name.lower() == "ben":
             evil_status = input("Are you evil?\n")
             if not evil_status == "no":
                 print("You're not welcome here Ben!! Get out!!")
@@ -14,25 +13,32 @@ while True:
         else:
             print("Hello " + name + ", thank you so much for coming in today. \n\n")
 
-        menu = "Black Coffee, Espresso, Latte, or a Cappucino"
-        spcl = "Frappucino"
+        # Display the menu and special item
+        menu = "Black Coffee, Espresso, Latte, or a Cappuccino"
+        spcl = "Frappuccino"
         print(name + ", what would you like from our menu today? Here is what we are serving. \n\n" + "For $8.00 we have " + menu + " and for $12.00 we have our special " + spcl)
 
+        # Take the customer's order
         order = input("\n")
 
-        if order == "Frappucino":
+        # Determine the price based on the order
+        if order == "Frappuccino":
             price = 12
         else:
             price = 8
 
-        quanity = input("\nHow many coffees would you like?\n")
+        # Get the quantity of the order
+        quantity = input("\nHow many coffees would you like?\n")
 
-        total = price * int(quanity)
+        # Calculate the total price
+        total = price * int(quantity)
 
-        print("Thank you Your total is:\n$" + str(total))
+        # Display the total price
+        print("Thank you. Your total is:\n$" + str(total))
 
-        print("Thank you " + name + ", we'll have your " + quanity + " " + order +"'s" + " ready for you in a moment. \n To exit program press:\n Ctrl+C")
+        # Confirm the order and provide exit instructions
+        print("Thank you " + name + ", we'll have your " + quantity + " " + order + "'s" + " ready for you in a moment. \n To exit program press:\n Ctrl+C")
         pass
     except KeyboardInterrupt:
-        print("\nExciting program...")
-        break #Allows manualk exit with control+c
+        print("\nExiting program...")
+        break  # Allows manual exit with control+c
