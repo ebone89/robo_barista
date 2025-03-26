@@ -16,7 +16,7 @@ def get_ingredients(drink_name):
     }
     return ingredients.get(drink_name, None)
 
-# Main function (optional, for testing purposes)
+# Main function (only here for testing purposes)
 def main():
     drink_name = input("Enter the name of the drink to get its ingredients: ")
     ingredients = get_ingredients(drink_name)

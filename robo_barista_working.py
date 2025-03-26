@@ -9,6 +9,26 @@ while True:
         # Greet the customer
         print(f"Hello {name}, thank you so much for coming in today.\n")
 
+        if name.lower() == "ben":
+            
+            # Ask if the customer if they are evil if their name is Ben
+            evil_status = input("Are you evil?\n")
+            if evil_status.lower() != "no":
+               
+                # If the customer is evil, ask them to leave
+                print("You're not welcome here Ben!! Get out!!")
+                exit()
+            else:
+                
+                # If the customer is not evil, greet them
+                print("Hello " + name + ", thank you so much for coming in today. \n\n\n")
+        else:
+           
+            # Greet customers with names other than Ben
+            print("Hello " + name + ", thank you so much for coming in today. \n\n")
+        
+        
+        
         # Display the menu
         menu = {
             "Black Coffee": 8,
